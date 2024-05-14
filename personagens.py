@@ -23,7 +23,7 @@ class Personagem:
         teclas = pygame.key.get_pressed()
 
         if teclas[pygame.K_RIGHT]:
-            if self.posiçãoX < 750:
+            if self.posiçãoX < 840:
                 self.posiçãoX = self.posiçãoX + 5
     
         if teclas[pygame.K_LEFT]:
@@ -35,5 +35,5 @@ class Personagem:
                 self.posiçãoY = self.posiçãoY - 5
 
         if teclas[pygame.K_DOWN]:
-            if self.posiçãoY < 450:
+            if self.posiçãoY < 550:
                 self.posiçãoY = self.posiçãoY + 5
