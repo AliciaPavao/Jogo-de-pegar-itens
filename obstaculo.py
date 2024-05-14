@@ -10,19 +10,20 @@ class Obstaculo:
 
         self.imagem = pygame.transform.scale(self.imagem,(self.largura,self.altura))
 
-        self.posiçãoX = x_inicial
+        self.posiçãoX = random.randint(50, 940)
         self.posiçãoY = y_inicial
 
         self.mascara = pygame.mask.from_surface(self.imagem)
 
-        self.velocidade = random.randint(1,10)
+        self.velocidade = random.randint(1,7)
 
     def movimenta(self):
-        self.posiçãoX = self.posiçãoX - self.velocidade
-        if self.posiçãoX < -200:
-            self.posiçãoX = 850
+        self.posiçãoY = self.posiçãoY + self.velocidade
+        if self.posiçãoY > 1050:
+            self.posiçãoY = -750
+            self.posiçãoX = random.randint(50, 940)
          
 
 
     def desenhar(self, tela):
-        tela.blit(self.imagem,(self.posiçãoX, self.posiçãoY))
+        tela.blit(self.imagem,( self.posiçãoX,  self.posiçãoY))
