@@ -1,5 +1,6 @@
 import pygame
 from personagens import Personagem
+from obstaculo import Obstaculo
 
 pygame.init()
 #Construindo a tela
