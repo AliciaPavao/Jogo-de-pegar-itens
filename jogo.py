@@ -8,6 +8,8 @@ tela = pygame.display.set_mode((1000, 700))
 pygame.display.set_caption("Jogo do chinbinho")
 tela.fill((117, 75, 19))
 
+musica = pygame.mixer.music.load("Borboletinha.mp3")
+
 pontuacao = 0
 vida = 5
 
@@ -46,6 +48,7 @@ while rodando:
             #if vidas >= 0:
             pass
 
+    musica = pygame.mixer.music.play()
 
     fundo.desenhar(tela)
 
