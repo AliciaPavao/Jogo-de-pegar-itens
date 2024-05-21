@@ -46,10 +46,10 @@ while rodando:
         if evento.type == pygame.QUIT:
             rodando = False        
         if evento.type == pygame.MOUSEBUTTONDOWN:
-            if vidas >= 0:
-                pygame.MOUSEBUTTONDOWN:
-                    vidas = 5
-                    pontuacao = 0
+            if vidas <= 0:
+                pygame.MOUSEBUTTONDOWN
+                vidas = 5
+                pontuacao = 0
             pass
 
     musica.play()
